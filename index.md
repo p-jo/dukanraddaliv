@@ -1,12 +1,10 @@
 ---
 title: Du kan rädda liv
-image: "/uploads/community organising (1).jpg"
-thumbnail: ''
-menu: services
+image: "/assets/images/palestine.png"
+thumbnail: "/assets/images/palestine.png"
 layout: start
 excerpt: Enkla saker du kan göra för att hjälpa Palestinas civilbefolkning
 ingress-text: Enkla saker du kan göra för att hjälpa Palestinas befolkning
-contact: true
 lang: sv
 layout: start
 ---
