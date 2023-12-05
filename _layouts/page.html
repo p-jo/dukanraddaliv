@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<section class="hero is-halfheight is-primary">
+  {% include header.html %}
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container">
+
+      <h1 class="title is-5 is-size-4-tablet is-size-3-desktop is-size-1-widescreen is-spaced">{{page.title}}</h1>
+      <p class="subtitle">{{page.ingress-text}}</p>
+
+    </div>
+  </div>
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <div class="container has-text-centered">
+      <!--
+      <a class="link-down" href="#content"><img src="{{site.baseurl}}/assets/images/pil.svg" alt="down" width="100" height="100"></a>
+      -->
+    </div>
+  </div>
+</section>
+
+<div id="content"></div>
+
+<article id="page" class="section is-medium page-{{page.ref}}">
+  <div class="container page">
+
+    <aside class="menu" id="accordion-menu">
+      <p class="menu-label accordion-head  is-hidden-widescreen ">Meny</p>
+      <ul class="menu-list accordion-body">
+        {% for menu in site.data.menu[page.lang] %}
+          {% for item in menu[1] %}
+            {% if item.url %}
+              <li><a class="{% if item.url==page.url %}is-active{% endif %}" href="{{site.baseurl}}{{item.url}}">{{item.title}}</a>
+                {% if item.items %}
+                  <ul>
+                    {% for subitem in item.items %}
+                      <li><a class="{% if subitem.url==page.url %}is-active{% endif %}" href="{{site.baseurl}}{{subitem.url}}">{{subitem.title}}</a>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+              {% endif %}
+
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      </aside>
+
+    {% if page.links %}
+      <aside class="facts has-text-right-widescreen">
+        <h2 class="title is-6">{{site.t[page.lang].read-more}}</h2>
+        <ul>
+          {% for item in page.links %}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+    {% endif %}
+
+    <div class="content">
+      {{content}}
+
+
+    {% if page.is_post %}
+      <hr>
+      <h2>Fler övningar</h2>
+
+      {% for item in site.posts %}
+        <h3><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></h3>
+        <p>{{ item.ingress-text }}</p>
+      {% endfor %}
+    {% endif %}
+
+  </div>
+
+
+  </div>
+</article>
+
+{% include footer.html %}

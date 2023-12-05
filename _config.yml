@@ -1,0 +1,40 @@
+---
+title: Du kan rädda liv - Eldupphör nu!
+name: Du kan rädda liv - Eldupphör nu!
+timezone: CET
+collections:
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: page
+    lang: sv
+- scope:
+    path: en
+    type: pages
+  values:
+    layout: page
+    lang: en
+- scope:
+    path: ''
+    type: posts
+  values:
+    is_post: true
+    layout: page
+    lang: sv
+baseurl:
+url: https://dukanraddaliv.se
+author: Du kan radda liv
+logo: "/assets/images/palestina.png"
+github_username: p-jo
+repository: p-jo/dukanraddaliv
+plugins:
+- jemoji
+- jekyll-seo-tag
+- jekyll-menus
+#- jekyll-feed
+emptyArray: []

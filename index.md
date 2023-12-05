@@ -1,0 +1,24 @@
+---
+title: Du kan rädda liv
+image: "/uploads/community organising (1).jpg"
+thumbnail: ''
+menu: services
+layout: start
+excerpt: Enkla saker du kan göra för att hjälpa Palestinas civilbefolkning
+ingress-text: Enkla saker du kan göra för att hjälpa Palestinas befolkning
+contact: true
+lang: sv
+layout: start
+---
+
+
+* **Bär pins, tröjor, palestinska symboler** för att visa dina grannar och medmänniskor att du inte är en del av regeringens stöd till folkmordet, att de kan prata med dig om vad ni kan göra
+* **Skriv och ring till regeringskansliet** och utrikesminister Tobias Billströmpå ud.registrator@regeringskansliet.se. Kräv att vår regering sätter press på Israel att upphäva blockaden mot Gaza och följer internationell rätt och skyddar civila. Prata med dem du får tag på. Kopplas vidare. Stå på dig. Var jobbig. Din förtvivlan och ilska är rimliga.  
+* **Kontakta riksdagspolitiker och lokala politiker** och kräv att de sätter press på sitt parti att verka för eldupphör och en upphävning av blockaden. Stå på dig. Var jobbig. Din förtvivlan och ilska är rimliga.  
+* **Ring eller skriv till de nyhetskanaler**, radio, tidningar, favoritprogram du följer när de rapporterar på sätt som indirekt avhumaniserar och stödjer folkmord. Beskriv hur de genom språk, vinkel, gäster osynliggör folkbrott, beskriv hur de kan bättra sig. Sveriges Radio har ex en lyssnarservice där de sammanställer alla som skriver/ringer in som läses varje dag.
+* **Tipsa de etablerade nyhetskanaler du följer** om nyheter du känner till från egna kanaler som de borde rapportera om.
+* **Ring vänner vars familjer** och nära och kära drabbas, var ett aktivt stöd i sorg och förtvivlan
+* [**Skriv under Amnestys upprop** om att utrikesminister Billström måste agera för att skydda civila]( https://www.amnesty.se/agerahub/sveriges-regering-maste-agera-att-skydda-civila/).
+* [**Skicka Svenska Freds vykort** som uppmanar regeringen att tydligt stå upp för folkrätten och stötta FNs uppmaning om omedelbart eldupphör och stoppa ytterligare eskalering.](https://stod.svenskafreds.se/stop-the-war-gaza/~se-min-donation)
+
+> Barnen behöver vatten, medicin, mat och bränsle -- upphäv blockaden nu!
