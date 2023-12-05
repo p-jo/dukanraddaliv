@@ -104,28 +104,28 @@ p > a:hover {
   }
 
   @include from($tablet) {
-    font-size: 4.375rem;
+    font-size: 5.5rem;
     &.lang-en {
       font-size: 4rem;
     }
   }
 
   @include from(550px) {
-    font-size: 6rem;
+    font-size: 8rem;
     &.lang-en {
       font-size: 5rem;
     }
   }
 
   @include from($desktop) {
-    font-size: 7.5rem;
+    font-size: 8rem;
     &.lang-en {
       font-size: 7rem;
     }
   }
 
   @include from($widescreen) {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 
   @include from($fullhd) {
