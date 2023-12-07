@@ -58,41 +58,37 @@ p > a:hover {
 
   &:hover {
     text-decoration: none;
-  }
-}
-
-.button {
-  font-weight: bold;
-  font-size: 1rem !important;
-
-  @include from($desktop) {
-    font-size: 1.625rem !important;
-  }
-
-  border-radius: 0 !important;
-  height: 2.25em !important;
-  line-height: 0;
-  @include read-more;
-}
-
-.read-more {
-  margin: 1.5rem 0 0.75rem;
-
-  a {
-    font-weight: bold;
-    @include read-more;
-  }
-
-  .button {
-    @include from($desktop) {
-      background: none;
-    }
+    background-color: lighten(#f59d20, 10%);
   }
 }
 
 
 // Title
 
+.title.is-title {
+  font-size: 3.375rem;
+  letter-spacing: -0.05em;
+
+  @include from($tablet) {
+  //  font-size: 5.5rem;
+  }
+
+  @include from(550px) {
+    font-size: 4rem;
+  }
+
+  @include from($desktop) {
+    font-size: 5.5rem;
+  }
+
+  @include from($widescreen) {
+    font-size: 8rem;
+  }
+
+  @include from($fullhd) {
+  //  font-size: 10rem;
+  }
+}
 
 .hero .title {
   font-size: 3.375rem;
@@ -211,6 +207,10 @@ a.title {
 
 // Card
 
+.card {
+  height: 100%;
+}
+
 .image {
   overflow: hidden;
 
@@ -306,8 +306,47 @@ a.title {
   color: $text !important;
 }
 
+
+
+@include from($widescreen) {
+  .hero.is-fullheight {
+    min-height: 200vh;
+  }
+
+  #page.section {
+    margin-top: -30rem !important;
+  }
+}
+@include from($fullhd) {
+  #page.section {
+    margin-top: -50rem !important;
+  }
+}
+.link-down {
+  display: none;
+}
+// body
 .hero {
-  @include gradients($yellow,$yellow,$pink);
+
+  background-image: url('../images/gaza.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+
+  @include from($desktop) {
+    background-position: 50% 43%;
+  }
+
+
+  @include from($widescreen) {
+    background-image: linear-gradient(to bottom, transparent, white),
+      url('../images/gaza.png');
+    background-position: 50% 80%;
+  }
+
+
+  // @include gradients($yellow,$yellow,$pink);
 }
 
 #page-services,
@@ -494,32 +533,6 @@ svg.logo-dropdown {
 // Sections
 
 
-.box {
-  margin-top: 3rem;
-  margin-bottom: 3rem !important;
-
-  @include until($desktop) {
-    padding: 0;
-    margin: 2rem 0 !important;
-  }
-
-  @include from($desktop) {
-    background-image: url("../images/box-top.png"), url("../images/box-bottom.png");
-    background-repeat: no-repeat;
-    background-position: 2% 0%, 98% 100%;
-  }
-
-  strong {
-    font-family: $family-monospace;
-  }
-
-  .is-medium {
-    font-size: 1.5rem;
-  }
-}
-
-
-
 
 // Content
 
@@ -602,7 +615,7 @@ aside {
 
 // Citat
 .content blockquote {
-  color: $pink;
+  color: #f59d20;
   font-weight: bold;
   font-size: 1.625rem;
   letter-spacing: -0.05em;

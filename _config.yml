@@ -29,7 +29,7 @@ defaults:
 baseurl:
 url: https://dukanraddaliv.se
 author: Du kan radda liv
-logo: "/assets/images/palestina.png"
+logo: "/assets/images/palestine.png"
 github_username: p-jo
 repository: p-jo/dukanraddaliv
 plugins:

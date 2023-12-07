@@ -1,0 +1,24 @@
+<div class="tile is-parent">
+  <article class="tile is-child box is-6-mobile is-4-tablet">
+      <!--
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="{{post.image}}" alt="Placeholder image">
+      </figure>
+    </div>
+    -->
+    <div class="card-content">
+      <h3 class="title is-4">{{item.title}}</h3>
+
+      <div class="content">
+        {{item.content}}
+        <br>
+      </div>
+    </div>
+    {% if item.link %}
+      <footer class="card-footer">
+        <a href="{{item.link.url}}" class="card-footer-item button">{{item.link.text}}</a>
+      </footer>
+    {% endif %}
+  </article>
+</div>

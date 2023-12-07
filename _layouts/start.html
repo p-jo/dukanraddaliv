@@ -6,11 +6,7 @@ layout: default
 
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title lang-{{page.lang}} is-spaced">{{page.title}}</h1>
 
-      <p class="subtitle is-6 is-size-5-desktop is-size-4-widescreen is-size-3-fullhd">{{page.ingress-text}}</p>
-    </div>
   </div>
 
   <!-- Hero footer: will stick at the bottom -->
@@ -30,9 +26,26 @@ layout: default
     <h1 class="title">{{page.title}}</h1>
   </div>
   -->
+
+  <div class="container has-text-centered">
+    <h1 class="title is-spaced is-title">{{page.title}}</h1>
+    <p class="subtitle is-6 is-size-5-desktop is-size-4-widescreen">{{page.ingress-text}}</p>
+  </div>
+  <hr>
+
+  <div class="container">
+    <div class="columns is-multiline">
+      {% assign posts=site.posts | reverse %}
+      {% for item in posts %}
+        {% include post.html %}
+      {% endfor %}
+    </div>
+  </div>
+  <hr>
+
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-6-fullhd is-8-widescreen is-10 content">
+      <div class="column is-6-fullhd is-8-widescreen is-10 content has-text-centered">
         {{content}}
       </div>
     </div>
