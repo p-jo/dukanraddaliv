@@ -264,6 +264,13 @@ a.title {
   }
 }
 
+.hero.is-fullheight {
+  /* Minimum aspect ratio for phones*/
+  @media (max-aspect-ratio: 0.58) {
+    min-height: 75vh;
+  }
+}
+
 .hero .image {
   padding-top: 120% !important;
 
