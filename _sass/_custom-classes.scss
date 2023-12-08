@@ -251,6 +251,13 @@ a.title {
 }
 
 
+//
+.container.main-title {
+  @include from($desktop) {
+    margin-bottom: 6rem;
+  }
+}
+
 // Hero
 
 .hero-body {
@@ -315,45 +322,39 @@ a.title {
 
 
 
-@include from($widescreen) {
+@include from($desktop) {
   .hero.is-fullheight {
-    min-height: 200vh;
-  }
-
-  #page.section {
-    margin-top: -30rem !important;
-  }
-}
-@include from($fullhd) {
-  #page.section {
-    margin-top: -50rem !important;
+    min-height: 17.5rem;
   }
 }
 .link-down {
   display: none;
 }
 // body
-.hero {
 
-  background-image: url('../images/gaza.png');
+body {
+  @include from($desktop) {
+    background-image: url('../images/web_utan_s.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #f38e00;
+  }
+}
+.hero.is-primary {
+  background-image: url('../images/web_s.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
-
   @include from($desktop) {
-    background-position: 50% 43%;
+    background: none;
   }
-
-
-  @include from($widescreen) {
-    background-image: linear-gradient(to bottom, transparent, white),
-      url('../images/gaza.png');
-    background-position: 50% 80%;
-  }
-
-
   // @include gradients($yellow,$yellow,$pink);
+}
+
+article {
+//  background-image: linear-gradient(to bottom, transparent, #f58e00);
 }
 
 #page-services,
@@ -622,7 +623,7 @@ aside {
 
 // Citat
 .content blockquote {
-  color: #f59d20;
+  color: $black;
   font-weight: bold;
   font-size: 1.625rem;
   letter-spacing: -0.05em;
