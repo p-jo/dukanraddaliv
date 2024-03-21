@@ -35,7 +35,7 @@ layout: default
 
   <div class="container">
     <div class="columns is-multiline">
-      {% assign posts=site.posts | reverse %}
+      {% assign posts=site.posts %}
       {% for item in posts %}
         {% include post.html %}
       {% endfor %}
